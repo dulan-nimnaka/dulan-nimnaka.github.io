@@ -159,6 +159,7 @@ nav {
 .tilt-card {
     perspective: 1000px;
     
+    
 
 }
 
@@ -170,6 +171,12 @@ nav {
     place-items: center;
     overflow: hidden;
     margin-top: 20px;
+    justify-self: center;
+    
+    
+    
+    
+    
     
 
 
@@ -184,9 +191,14 @@ nav {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
     border: var(--glass-border);
     box-shadow: var(--shadow);
+    max-width: 100%;
+    
+    
     
 
 }
+
+
 
 @media (max-width: 860px) {
     .hero .inner {
@@ -200,6 +212,7 @@ nav {
         width: 220px;
         height: 220px;
         margin-top: 2rem;
+        
         
 
 
