@@ -226,4 +226,75 @@ nav {
 }
 
 
+/* glass + section-title */
+.glass {
+    border-radius: 22px;
+    border: var(--glass-border);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    box-shadow: var(--shadow);
 
+}
+
+.section-title {
+    font-size: clamp(22px, 3vw, 30px);
+    margin-bottom: 24px;
+}
+
+
+
+/* About Section */
+.about p {
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+@media (max-width: 860px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill-card {
+    padding: 18px;
+}
+
+.skill-card h4 {
+    margin: 6px 0 12px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(255, 255, 255, 0.);
+}
+
+.skill img {
+    width: 34px;
+    height: 34px;
+    filter: grayscale(1);
+    transition: filter 0.2s, transform 0.15s;
+
+}
+
+.skill:hover img {
+    filter: grayscale(0);
+}
