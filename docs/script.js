@@ -24,3 +24,6 @@ document.getElementById("openMenu")?.addEventListener('click', () => {
     }
 
 });
+
+// Update the footer year dynamically
+document.getElementById("year").innerHTML = new Date().getFullYear();
