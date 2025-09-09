@@ -9,10 +9,11 @@
         <title>Dulan Nimnaka – Portfoli</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"/>
 
-        <!-- Google Fonts -->
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
         <!-- Animate On Scroll CSS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
@@ -268,9 +269,57 @@
         <section class="container" id="contact">
             <h2 class="section-title" >Get in Touch</h2>
             <div class="contact-grid">
-                <form class="glass" id="contactForm" >
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>info.dulannimnaka@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Colombo, Sri Lanka</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+
+
+
+                <form class="glass" id="contactForm" action="" method="POST">
+                    <label>
+                        <small>Name</small>
+                        <input name="name" type="text" placeholder="Your name" required />
+                    </label>
+
+                    <label>
+                        <small>Email</small>
+                        <input name="email" type="email" placeholder="Your email" required />
+                    </label>
+
+                    <label>
+                        <small>Message</small>
+                        <textarea name="message" placeholder="Your message" required></textarea>
+                    </label>
+
+                    <button class="btn primary" type="submit">Send</button>
 
                 </form>
+
             </div>
         </section>
 
