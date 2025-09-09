@@ -566,6 +566,91 @@ nav {
 }
 
 /* Contact Section */
+/* Contact Section -> Item */
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: var(--text);
+    border-radius: 50%;
+    font-size: 1.2rem;
+
+}
+
+.contact-details h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+
+}
+
+.contact-details p {
+    color: var(--text);
+
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3 ease;
+    box-shadow: var(--shadow);
+
+
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+}
+
+.social-link:nth-child(1):hover {
+    background: #333;
+    color: white;
+}
+
+.social-link:nth-child(2):hover {
+    background: #0A66C2;
+    color: white;
+
+}
+
+.social-link:nth-child(3):hover {
+    background: #0fe90b;
+    color: white;
+}
+
+
+
+/* Contact Section -> Form */
 .contact-grid {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -575,8 +660,12 @@ nav {
 
 @media (max-width: 860px) {
     .contact-grid {
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1fr;
 
+    }
+
+    .contact-left {
+        align-items: flex-start;
     }
 }
 
