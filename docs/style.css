@@ -42,10 +42,13 @@ a {
 /* Navigation Bar Style */
 .navwrap {
     position: sticky;
-    top: 0;
+    top: 10px;
     z-index: 1000;
+
+    /*
     backdrop-filter: saturate(1.2) blur(14px);
     --webkit-backdrop-filter: saturate(1.2) blur(14px);
+    */
 
 }
 
@@ -53,9 +56,31 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /*
     padding: 14px 20px;
     border-bottom: var(--glass-border);
     background: linear-gradient(180deg, rgba(18, 20, 23, 0.35));
+    */
+
+    gap: 16px;
+
+    /* Box glass design */
+    background: linear-gradient(180deg, rgba(18, 20, 23, 0.35));
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: saturate(1.2) blur(14px);
+    --webkit-backdrop-filter: saturate(1.2) blur(14px);
+
+    padding: 12px 14px;
+    margin: 0 auto; /* little gap from edges */
+    max-width: 1160px; /* match container width */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+
 
 }
 
