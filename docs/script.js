@@ -27,3 +27,37 @@ document.getElementById("openMenu")?.addEventListener('click', () => {
 
 // Update the footer year dynamically
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+// Typing Animation
+const typingElement = document.getElementById("typing-element");
+const text = "Hi, I'm Dulan Nimnaka";
+let index = 0;
+let isDeleting = false;
+let speed = 200; // Typing speed in milliseconds
+
+function type() {
+    if (isDeleting) {
+        // Deleting characters
+        typingElement.innerHTML = text.substring(0, index - 1);
+        index--;
+        speed = 50; // Faster deleting speed
+    } else {
+        // Adding characters
+        typingElement.innerHTML = text.substring(0, index + 1);
+        index++;
+        speed = 200; // Normal typing speed
+    }
+
+    // If the text is fully typed, start deleting after a short pause
+    if (!isDeleting && index === text.length) {
+        isDeleting = true;
+        speed = 1000; // Pause before deleting
+
+    } else if (isDeleting && index === 0) {
+        isDeleting = false;
+    }
+
+    setTimeout(type, speed);
+}
+
+type();
