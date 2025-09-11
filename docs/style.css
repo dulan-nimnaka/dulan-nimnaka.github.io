@@ -36,6 +36,8 @@ a {
 .container {
     max-width: 1160px;
     margin: 0 auto;
+    margin-bottom: 80px;
+    
 
 }
 
@@ -133,6 +135,8 @@ nav {
 
 section {
     scroll-margin: 90px;
+    
+
 }
 
 /* Hero Section */
@@ -244,6 +248,10 @@ section {
 
 }
 
+.profile-pic:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 
 
 @media (max-width: 860px) {
@@ -300,6 +308,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
+    
 }
 
 @media (max-width: 860px) {
@@ -320,6 +329,13 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0, 0, 0, 1px rgba(255,255,255, 0.06);
+    transition: all 0.3s ease;
+
 }
 
 .skill {
@@ -377,6 +393,13 @@ section {
     height: auto;
 }
 
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0, 0, 0, 1px rgba(255,255,255, 0.06);
+    transition: all 0.3s ease;
+
+}
+
 .project .thumb {
     height: 180px;
     display: flex;
@@ -390,6 +413,11 @@ section {
     flex-shrink: 0;
 
 
+}
+
+.project .thumb:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .project .thumb img {
@@ -441,6 +469,7 @@ section {
 /* Education Section */
 .edu {
     position: relative;
+
 }
 
 .edu::before {
@@ -466,6 +495,13 @@ section {
 .edu-item .card {
     padding: 18px;
     backdrop-filter: blur(8px);
+
+}
+
+.edu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0, 0, 0, 1px rgba(255,255,255, 0.06);
+    transition: all 0.3s ease;
 
 }
 
@@ -703,6 +739,13 @@ section {
     padding: 5px;
     border-radius: 10px;
     box-shadow: var(--shadow);
+
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0, 0, 0, 1px rgba(255,255,255, 0.06);
+    transition: all 0.3s ease;
 
 }
 
