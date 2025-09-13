@@ -61,3 +61,13 @@ function type() {
 }
 
 type();
+
+// AOS Initialization
+AOS.init({
+    duration: 800,   // Animation duration in milliseconds
+    once: false,     // Allow animations to happen more than once
+    mirror: true,   // Whether elements should animate out while scrolling past them
+    throttleDelay: 99, // Throttle delay for scroll events
+    offset: 120, // Offset (in px) from the original trigger point
+    
+});
