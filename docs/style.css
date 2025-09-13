@@ -75,7 +75,7 @@ nav {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 
     backdrop-filter: saturate(1.2) blur(14px);
-    --webkit-backdrop-filter: saturate(1.2) blur(14px);
+    -webkit-backdrop-filter: saturate(1.2) blur(14px);
 
     padding: 12px 14px;
     margin: 0 auto; /* little gap from edges */
@@ -847,7 +847,8 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.1);
+    color: #aeb7c8;
     transition: transform 0.12s;
 
 }
@@ -857,9 +858,30 @@ footer {
 }
 
 .ico {
-    fill: #aeb7c8;
+    fill: currentColor; /* #aeb7c8 */
     transition: fill 0.2s;
 
+}
+
+.gh { 
+    color: #aeb7c8; 
+}
+.gh:active, .gh:hover { 
+    color: #171515; 
+}
+
+.li { 
+    color: #aeb7c8; 
+}
+.li:active, .li:hover { 
+    color: #0A66C2; 
+}
+
+.cm { 
+    color: #aeb7c8; 
+}
+.cm:active, .cm:hover { 
+    color: #0fe90b; 
 }
 
 .gh:hover .ico {
