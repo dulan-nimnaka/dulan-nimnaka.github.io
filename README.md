@@ -1,25 +1,44 @@
-# dulan-nimnaka.github.io
+# Dulan Nimnaka - Portfolio Website
 
-# 👨‍💻 Coding in Progress…
+![Portfolio Screenshot](./screenshots/home.webp)
 
-My portfolio website is currently under construction.  
-Stay tuned — it will be live soon! 🚀  
+A modern, responsive portfolio website showcasing my skills, projects, and journey as a Computer Science student. Built with pure HTML, CSS, and JavaScript.
 
----
+## 🚀 Live Demo
 
-### 🔗 Future Link
-Once published, you’ll be able to visit my portfolio here:  
-👉 [dulan-nimnaka.github.io](https://dulan-nimnaka.github.io)  
+Check out the live website: [https://dulan-nimnaka.github.io/](https://dulan-nimnaka.github.io/)
 
----
+## ✨ Features
 
-### 📌 About This Repo
-This repository will host my personal portfolio built with **HTML, CSS, and JavaScript**, showcasing:  
-- 🎓 Education  
-- 💻 Skills (Frontend, Backend, Tools/Platforms)  
-- 📂 Projects  
-- 📬 Contact  
+- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
+- **Modern UI/UX** - Clean glass-morphism design with smooth animations
+- **Interactive Elements** - Typing animation, hover effects, and smooth scrolling
+- **Project Showcase** - Dedicated section for projects with live demos and code links
+- **Contact Form** - Functional contact form with Formspree integration
+- **Education Timeline** - Visual timeline of academic journey
 
----
+## 🛠️ Tech Stack
 
-✨ Check back soon for updates!
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Styling:** CSS Grid, Flexbox, CSS Variables
+- **Animations:** AOS (Animate On Scroll) library, custom CSS/JS animations
+- **Icons:** Font Awesome, Devicon
+- **Deployment:** GitHub Pages
+
+## 📸 Screenshots
+
+![Skills Section](./screenshots/skills.webp)
+![Projects Section](./screenshots/projects.webp)
+![Education Section](./screenshots/education.webp)
+![Contact Section](./screenshots/contact.webp)
+
+## 📞 Contact
+[Email](info.dulannimnaka@gmail.com)
+[LinkedIn](linkedin.com/in/dulannimnaka)
+[GitHub](github.com/dulan-nimnaka)
+[Portfolio](dulan-nimnaka.github.io)
+
+## ✍️ Author
+Dulan Nimnaka [ConnectMe](https://dulan-nimnaka.github.io/connectme/)
+
+© 2025 Dulan Nimnaka. All rights reserved.
