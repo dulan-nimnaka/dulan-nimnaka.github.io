@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dulan-nimnaka.github.io/sitemap.xml
