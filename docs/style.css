@@ -488,6 +488,76 @@ section {
 
 }
 
+.uni-courses {
+    margin-top: 16px;
+    display: grid;
+    gap: 14px;
+}
+
+.course-group {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    overflow: hidden;
+}
+
+.course-group summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #eef2f7;
+}
+
+.course-group summary::-webkit-details-marker {
+    display: none;
+}
+
+.course-group summary::after {
+    content: "+";
+    font-size: 1rem;
+    color: var(--muted);
+}
+
+.course-group[open] summary::after {
+    content: "-";
+}
+
+.course-group summary span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #d9e1ef;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    padding: 4px 8px;
+}
+
+.course-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 12px 12px;
+}
+
+.course-chips span {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg, rgba(107, 183, 123, 0.16), rgba(215, 111, 48, 0.16));
+    color: #e8edf6;
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
 .edu-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0, 0, 0, 1px rgba(255,255,255, 0.06);
