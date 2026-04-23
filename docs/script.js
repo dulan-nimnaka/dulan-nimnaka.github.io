@@ -2,28 +2,57 @@
 
 // Navigation Bar
 // Sticky navbar with mobile hamburger menu toggle
-document.getElementById("openMenu")?.addEventListener('click', () => {
-    const links = document.querySelector(".navLinks");
+const menuButton = document.getElementById("openMenu");
+const navLinks = document.querySelector(".navLinks");
 
-    if(!links) return;
+if (menuButton && navLinks) {
+    const mobileQuery = window.matchMedia("(max-width: 860px)");
 
-    if(getComputedStyle(links).display === 'none'){
-        links.style.display = 'flex';
-        links.style.flexDirection = 'column';
-        links.style.position = 'absolute';
-        links.style.top = '64px';
-        links.style.right = '20px';
-        links.style.padding = '12px';
-        links.style.border = '1px solid rgba(255, 255, 255, 0.12)';
-        links.style.background = 'rgba(18, 20, 23, 0.95)';
-        links.style.borderRadius = '14px'
+    const closeMenu = () => {
+        navLinks.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open Menu");
+        menuButton.textContent = "☰";
+    };
 
+    const openMenu = () => {
+        navLinks.classList.add("open");
+        menuButton.setAttribute("aria-expanded", "true");
+        menuButton.setAttribute("aria-label", "Close Menu");
+        menuButton.textContent = "✕";
+    };
 
-    } else {
-        links.removeAttribute('style');
-    }
+    menuButton.addEventListener("click", () => {
+        if (navLinks.classList.contains("open")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
 
-});
+    navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!mobileQuery.matches) return;
+
+        const target = event.target;
+        if (!(target instanceof Node)) return;
+
+        if (!navLinks.contains(target) && !menuButton.contains(target)) {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (!mobileQuery.matches) {
+            closeMenu();
+        }
+    });
+
+    closeMenu();
+}
 
 // Update the footer year dynamically
 document.getElementById("year").innerHTML = new Date().getFullYear();

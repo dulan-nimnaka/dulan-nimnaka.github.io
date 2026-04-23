@@ -67,6 +67,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+    position: relative;
 
     /* Box glass design */
     background: linear-gradient(180deg, rgba(18, 20, 23, 0.35));
@@ -124,6 +125,23 @@ nav {
 @media (max-width:860px) {
     .navLinks {
         display: none; /* Hides the navigation links div */
+    }
+
+    .navLinks.open {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        position: absolute;
+        top: 64px;
+        right: 0;
+        min-width: 220px;
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(18, 20, 23, 0.95);
+        border-radius: 14px;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+        z-index: 1200;
     }
 
     .hamb {
